@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Badan Meteorologi, Klimatologi, dan Geofisika</title>
+	<link rel="stylesheet" type="text/css" href="CSS_Beranda.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=0rbitron">
+	<link rel="icon" href="image/BMKG/logo_bmkg.png">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+		function startTime(){
+			var today =new Date();
+			var h =today.getHours();
+			var m =today.getMinutes();
+			var s =today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+			var t =setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if(i<10) {i = "0" + i};
+			return i;
+		}
+	</script>
+	<style>
+		#clock {
+			position: absolute;
+			bottom: 90%;
+			left: 82.8%;
+			transform: translate(-50%,-50%);
+			color: white;
+			font-family: rockwell;
+			letter-spacing: 7px;
+			font-weight: bold;
+			align-items: right;
+		}
+	</style>
+</head>
+<body onload="startTime()">
+<!--CLOCK-->
+	<div id="clock"></div>
+
+<!--NAVBAR-->
+	<div class="banner">
+		<div class="navbar">
+		<label class="logo"><img src="image/BMKG/bmkg.png" align="left"width="100px"></label>
+			<ul style="font-family: gill sans mt;">
+				<li><a href="index.html">Home</a></li>
+				<li class="dropdown">
+                    <a href="javascript:void(0)">About ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Sejarah.html">Sejarah</a>
+                        <a href="Visi.html">Visi dan Misi</a>
+                    </div>             
+				</li>
+				<li><a href="Gallery.html">Gallery</li>
+				<li><a href="Contact.html">Contact</li>
+				<li><a href="index4.html">Registration</li>
+				<li><a href="index2.html" class="cta">Log In</a></li>
+			</ul>
+
+<!--SIDEBAR-->
+			<div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button> 
+            </div>
+        </nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="judul3">Side Menu</div><br><br>
+            	<li class="dropdown">
+                    <a href="javascript:void(0)">Profil BMKG ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Profil.html">Video Profil BMKG</a>
+                        <a href="Logo.html">Logo BMKG</a>   
+                        <a href="Tugas.html">Tugas, Fungsi, dan Kewenangan</a>
+           		 	</div><br>
+            	<li class="dropdown">
+                    <a href="javascript:void(0)">Publikasi ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Pers.html">Siaran Pers</a>
+                        <a href="Majalah.html">Majalah</a>
+                        <a href="AVI.html"><a href="http://media.bmkg.go.id/VOD.bmkg">Audio dan Video</a></a>
+                        <a href="Jurnal.html"><a href="http://puslitbang.bmkg.go.id/jmg/index.php/jmg">Jurnal</a></a>
+                        <a href="ELearning.html"><a href="https://pusdiklat.bmkg.go.id/">E-Learning</a></a>
+                        <a href="Artikel.html">Artikel</a></a>
+           		 	</div><br>
+            <li><a href="Organisasi.html">Struktur Organisasi</a></li>
+            <li><a href="Katalog.html"><a href="https://sibatik.bmkg.go.id/layanan.html">Katalog Layanan Jaringan Komunikasi</a></a></li>
+				</li>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+			<div class="tombol-sosmed">
+				<a href="https://web.facebook.com/InfoBMKG/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/infoBMKG/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/infoBMKG" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+        </div>
+		</div>
+		<br>
+		
+
+<!--BERANDA-->
+		<div class="content">
+			<h2 style="font-family: adlinnaka; color: white; font-size: 250%; margin-top: 100px; text-decoration: bold;">BADAN METEOROLOGI, KLIMATOLOGI, DAN GEOFISIKA</h2>
+			<p style="font-family: gill sans mt; color: white; font-size: 200%; margin-left: 45px; margin-right: 45px;">Cepat, Tepat, Akurat, Luas, dan Mudah Dipahami</p>
+			<div>
+				<button type="button"><span></span><a href="https://www.youtube.com/c/InfoBMKGIndonesia" target="_blank">YouTube</a></button>
+				<button type="button"><span></span><a href="https://www.bmkg.go.id/" target="_blank">Website</a></button>
+			</div>
+		</div>
+	</div>
+
+<script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "350px";
+              document.getElementById("main").style.marginLeft = "0px";
+            }
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+</script>
+
+</body>
+</html>

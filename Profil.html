@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profil BMKG</title>
+	<link rel="stylesheet" type="text/css" href="CSS_Konten.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=0rbitron">
+	<link rel="icon" href="image/BMKG/logo_bmkg.png">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+		function startTime(){
+			var today =new Date();
+			var h =today.getHours();
+			var m =today.getMinutes();
+			var s =today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+			var t =setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if(i<10) {i = "0" + i};
+			return i;
+		}
+	</script>
+	<style>
+		#clock {
+			position: absolute;
+			bottom: 90%;
+			left: 82.8%;
+			transform: translate(-50%,-50%);
+			color: black;
+			font-family: rockwell;
+			letter-spacing: 7px;
+			font-weight: bold;
+			align-items: right;
+		}
+
+		body {
+			background-color: lightsteelblue;
+	  	}
+
+		h1 {
+		  font-family: rockwell;
+		  font-size: 250%;
+		  color: white;
+		  text-align: center;
+		  margin-right: 55px;
+		  margin-left: 55px;
+		  background-color: steelblue;
+		}
+
+		h2 {
+		  font-family: adlinnaka;
+		  color: black;
+		  font-size: 150%;
+		  margin-right: 60px;
+		  margin-left: 60px;
+		  text-decoration: bold;
+		}
+
+		p {
+		  font-family: gill sans mt;
+		  color: black;
+		  font-size: 150%;
+		  margin-left: 65px;
+		  margin-right: 65px;
+		}
+	</style>
+</head>
+<body onload="startTime()">
+<!--CLOCK-->
+	<div id="clock"></div>
+
+
+<!--NAVBAR-->
+	<div class="banner">
+		<div class="navbar">
+		<label class="logo"><img src="image/BMKG/bmkg.png" align="left" width="100px"></label>
+			<ul style="font-family: gill sans mt;">
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li class="dropdown">
+                    <a href="javascript:void(0)">About ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="sejarah.html" target="_blank">Sejarah</a>
+                        <a href="Visi.html" target="_blank">Visi dan Misi</a>
+                    </div>             
+				</li>
+				<li><a href="Gallery.html">Gallery</li>
+				<li><a href="Contact.html">Contact</li>
+				<li><a href="index4.html">Registration</li>
+				<li><a href="index2.html" class="cta">Log In</a></li>
+			</ul>
+
+
+<!--SIDEBAR-->
+			<div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button> 
+            </div>
+        </nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="judul3">Side Menu</div><br><br>
+            	<li class="dropdown">
+                    <a href="javascript:void(0)">Profil BMKG ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Profil.html">Video Profil BMKG</a>
+                        <a href="Logo.html">Logo BMKG</a>
+                        <a href="Tugas.html">Tugas, Fungsi, dan Kewenangan</a>
+                    </div>
+            <li class="dropdown">
+                    <a href="javascript:void(0)">Publikasi ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Pers.html">Siaran Pers</a>
+                        <a href="Majalah.html">Majalah</a>
+                        <a href="AVI.html"><a href="http://media.bmkg.go.id/VOD.bmkg">Audio dan Video</a></a>
+                        <a href="Jurnal.html"><a href="http://puslitbang.bmkg.go.id/jmg/index.php/jmg">Jurnal</a></a>
+                        <a href="ELearning.html"><a href="https://pusdiklat.bmkg.go.id/">E-Learning</a></a>
+                        <a href="Artikel.html">Artikel</a></a>
+           		 	</div>
+            <li><a href="Organisasi.html">Struktur Organisasi</a></li>
+            <li><a href="Katalog.html"><a href="https://sibatik.bmkg.go.id/layanan.html">Katalog Layanan Jaringan Komunikasi</a></a></li>
+				</li>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+			<div class="tombol-sosmed">
+				<a href="https://web.facebook.com/InfoBMKG/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/infoBMKG/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/infoBMKG" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+        </div>
+		</div>
+<hr>
+<br>
+<br>
+
+<!--CONTENT-->
+	<h1>Profil Badan Meteorologi, Klimatologi, dan Geofisika</h1><br><br>
+<p>Badan Meteorologi, Klimatologi, dan Geofisika (disingkat BMKG), sebelumnya bernama Badan Meteorologi dan Geofisika (disingkat BMG), adalah Lembaga Pemerintah Nonkementerian Indonesia (LPNK) yang mempunyai tugas melaksanakan tugas pemerintahan di bidang meteorologi, klimatologi, dan geofisika.</p><br>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/TzFyRdX20xM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
+<center><p>Profil lengkap BMKG dapat dilihat pada video di atas.</p></center>
+<br><br><br>
+
+
+<!--SIDEBAR SCRIPT-->
+<script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "350px";
+              document.getElementById("main").style.marginLeft = "0px";
+            }
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+</script>
+
+
+<!--FOOTER-->
+<center><div class="footer">
+        <ul>
+        	<li>Copyright © 2022. <a href="https://www.bmkg.go.id/" target="blank" class="link">Badan Meteorologi, Klimatologi, dan Geofisika</a> All Right Reserved</li>
+            <li>Designed by Rahmaneza S</li>
+        </ul>
+    </div></center>
+
+</body>
+</html>

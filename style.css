@@ -1,0 +1,109 @@
+h1 {
+		  font-family: rockwell;
+		  font-size: 275%;
+		  color: white;
+		  text-align: center;
+		  margin-right: 55px;
+		  margin-left: 55px;
+		  margin-top: 40px;
+		}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	width: auto;
+	height: 97.5vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(image/BMKG/background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+label {
+	font-family: gill sans mt;
+	font-size: 25px;
+	color: lightsteelblue;
+	text-align: center;
+}
+
+#forgot-pass {
+	color: white;
+	font-family: gill sans mt;
+	font-size: 13pt;
+	margin-top: 3px;
+	text-align: right;
+}
+
+#card {
+	background: white;
+	border-radius: 8px;
+	box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+	height: 410px;
+	margin: 6rem auto 8.1rem auto;
+	width: 329px;
+}
+
+#card-content {
+	padding: 12px 44px;
+}
+
+#card-title {
+	font-family: rockwell;
+	letter-spacing: 4px;
+	padding-bottom: 23px;
+	padding-top: 13px;
+	text-align: center;
+}
+
+#signup {
+	color: white;
+	font-family: gill sans mt;
+	font-size: 13pt;
+	margin-top: 16px;
+	text-align: center;
+}
+
+#submit-btn {
+	background: -webkit-linear-gradient(right,lightsteelblue,gainsboro);
+	border-radius: 21px;
+	border: none;
+	box-shadow: 0px 1px 8px dimgray;
+	cursor: pointer;
+	color: black;
+	font-family: gill sans mt;
+	font-size: 17px;
+	text-decoration: bold;
+	height: 42.3px;
+	margin: 0 auto;
+	margin-top: 50px;
+	transition: 0.25s;
+	width: 153px;
+}
+
+#submit-btn:hover {
+	box-shadow: 0px 1px 18px dimgray;
+}
+
+.form {
+	align-items: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-border {
+	height: 1px;
+	width: 300px;
+	background: -webkit-linear-gradient(right,lightsteelblue,gainsboro);
+}
+
+.form-content {
+	background: white;
+	border: none;
+	outline: none;
+	padding-top: 14px;
+	height: 25px;
+	width: 300px;
+	text-align: center;
+}

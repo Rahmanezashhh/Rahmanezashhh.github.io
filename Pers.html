@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Siaran Pers</title>
+	<link rel="stylesheet" type="text/css" href="CSS_Konten.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=0rbitron">
+	<link rel="icon" href="image/BMKG/logo_bmkg.png">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+		function startTime(){
+			var today =new Date();
+			var h =today.getHours();
+			var m =today.getMinutes();
+			var s =today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+			var t =setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if(i<10) {i = "0" + i};
+			return i;
+		}
+	</script>
+	<style>
+		#clock {
+			position: absolute;
+			bottom: 90%;
+			left: 82.8%;
+			transform: translate(-50%,-50%);
+			color: black;
+			font-family: rockwell;
+			letter-spacing: 7px;
+			font-weight: bold;
+			align-items: right;
+		}
+
+		body {
+			background-color: lightsteelblue;
+	  	}
+
+		h1 {
+		  font-family: rockwell;
+		  font-size: 250%;
+		  color: white;
+		  text-align: center;
+		  margin-right: 55px;
+		  margin-left: 55px;
+		  background-color: steelblue;
+		}
+
+		h2 {
+		  font-family: adlinnaka;
+		  color: black;
+		  font-size: 120%;
+		  margin-right: 65px;
+		  margin-left: 65px;
+		  text-decoration: bold;
+		}
+
+		p {
+		  font-family: gill sans mt;
+		  color: black;
+		  font-size: 125%;
+		  margin-left: 65px;
+		  margin-right: 65px;
+		}
+	</style>
+</head>
+<body onload="startTime()">
+<!--CLOCK-->
+	<div id="clock"></div>
+
+
+<!--NAVBAR-->
+	<div class="banner">
+		<div class="navbar">
+		<label class="logo"><img src="image/BMKG/bmkg.png" align="left" width="100px"></label>
+			<ul style="font-family: gill sans mt;">
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li class="dropdown">
+                    <a href="javascript:void(0)">About ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="sejarah.html" target="_blank">Sejarah</a>
+                        <a href="Visi.html" target="_blank">Visi dan Misi</a>
+                    </div>             
+				</li>
+				<li><a href="Gallery.html">Gallery</li>
+				<li><a href="Contact.html">Contact</li>
+				<li><a href="index4.html">Registration</li>
+				<li><a href="index2.html" class="cta">Log In</a></li>
+			</ul>
+
+
+<!--SIDEBAR-->
+			<div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button> 
+            </div>
+        </nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="judul3">Side Menu</div><br><br>
+            	<li class="dropdown">
+                    <a href="javascript:void(0)">Profil BMKG ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Profil.html">Video Profil BMKG</a>
+                        <a href="Logo.html">Logo BMKG</a>
+                        <a href="Tugas.html">Tugas, Fungsi, dan Kewenangan</a>
+                    </div>
+            <li class="dropdown">
+                    <a href="javascript:void(0)">Publikasi ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Pers.html">Siaran Pers</a>
+                        <a href="Majalah.html">Majalah</a>
+                        <a href="AVI.html"><a href="http://media.bmkg.go.id/VOD.bmkg">Audio dan Video</a></a>
+                        <a href="Jurnal.html"><a href="http://puslitbang.bmkg.go.id/jmg/index.php/jmg">Jurnal</a></a>
+                        <a href="ELearning.html"><a href="https://pusdiklat.bmkg.go.id/">E-Learning</a></a>
+                        <a href="Artikel.html">Artikel</a></a>
+           		 	</div>
+            <li><a href="Organisasi.html">Struktur Organisasi</a></li>
+            <li><a href="Katalog.html"><a href="https://sibatik.bmkg.go.id/layanan.html">Katalog Layanan Jaringan Komunikasi</a></a></li>
+				</li>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+			<div class="tombol-sosmed">
+				<a href="https://web.facebook.com/InfoBMKG/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/infoBMKG/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/infoBMKG" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+        </div>
+		</div>
+<hr>
+<br>
+<br>
+
+<!--CONTENT-->
+	<h1>Sukseskan KTT G20 di Bali, BMKG Lakukan Pembaharuan Aplikasi InfoBMKG, Ini Fitur Barunya</h1><br>
+	<center><h2>Rozar Putratama | 08 Nov 2022</h2></center><br><br><br>
+	<center><img src="image/BMKG/G20.jpeg" style="width: 750px;"></center><br><br><br>
+<p>JAKARTA (7 November 2022) - Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) mengumumkan pembaharuan aplikasi infoBMKG guna memperkuat sistem peringatan dini. Langkah pembaharuan ini juga dilakukan guna turut menyukseskan agenda Konferensi Tingkat Tinggi (KTT) ke-17 G20 akan diselenggarakan di Bali pada 15-16 November 2022 mendatang.<br><br>
+
+"Dalam berbagai event, BMKG juga melayani kebutuhan masyarakat akan informasi yang berkenaan dengan meteorologi, klimatologi, dan geofisika. Sebelum G20, BMKG juga ikut menyukseskan sejumlah event diantaranya Asian Games 2018, MotoGP Mandalika 2022, PON XX Papua 2022, dan masih banyak lagi," ungkap Kepala BMKG, Dwikorita Karnawati dalam launching InfoBMKG G20 di Jakarta, Senin (7/11).<br><br>
+
+"Khusus event KTT G20, informasi mengenai cuaca, iklim, dan gempa bumi akan disediakan di seluruh lokasi acara. Diantaranya di Garuda Wisnu Kencana, Hotel The Apurva Kempinski Bali, Kawasan Mangrove Taman Hutan Rakyat (Tahura) Ngurah Rai Bali dan VVIP Bandara Internasional I Gusti Ngurah Rai," tambah dia.<br><br>
+
+Dwikorita menuturkan pembaharuan yang dilakukan ini juga sebagai respon BMKG terhadap situasi Planet Bumi kekinian yang sangat kompleks. Berbagai kejadian ekstrem, kata dia, semakin sering terjadi dengan durasi yang semakin bertambah dan tidak pasti. Tidak hanya terkait cuaca dan iklim saja, namun juga berbagai fenomena tektonik dan vulkanik.<br><br>
+
+Dengan pembaharuan ini, lanjut Dwikorita, diharapkan data dan informasi yang diberikan kepada masyarakat luas dapat semakin cepat, tepat, dan akurat. Sehingga target zero victim apabila sewaktu-waktu Indonesia dihantam bencana alam bisa terwujud.<br><br>
+
+"Ini bagian dari ikhitar dan inovasi teknologi yang terus dilakukan oleh BMKG untuk menjaga republik ini. Semua kanal komunikasi kami maksimalkan untuk bisa menjangkau publik lebih luas lagi demi mewujudkan zero victim. Terpenting informasi yang dikeluarkan BMKG valid dan bukan kabar bohong atau hoax," ujarnya.<br><br>
+
+Dwikorita menyebut bahwa pengembangan dan pembaharuan yang dilakukan pada aplikasi infoBMKG ini, 100 persen dikerjakan seluruhnya oleh Sumber Daya Manusia (SDM) dari BMKG tanpa bantuan vendor. Menurutnya, banyak aplikasi cuaca yang bertebaran di Google Play Store dan Apple Store yang mengambil data dan informasi yang berasal dari infoBMKG.
+
+Perkuat Sistem Peringatan Dini<br><br>
+
+Lebih lanjut Dwikorita mengatakan bahwa aplikasi infoBMKG mulai dikembangkan pada tahun 2012 dan terus dilakukan pembaharuan juga inovasi hingga saat ini. Aplikasi ini, kata dia, tersedia untuk perangkat iOS dan Android dengan berbagai fitur yang bisa diakses masyarakat secara gratis.<br><br>
+
+Hingga saat ini, aplikasi InfoBMKG telah diunduh lebih dari 5 juta pengguna melalui Play Store, sekaligus menjadikan Info BMKG sebagai aplikasi gratis nomor satu untuk layanan informasi cuaca, iklim, kualitas udara, dan gempa bumi. Pada tahun 2020, tambah dia, Aplikasi InfoBMKG juga dinobatkan oleh World Meteorological Organization (WMO) sebagai aplikasi terbaik untuk layanan cuaca sektor khusus yaitu pada sektor penerbangan dan maritim.<br><br>
+
+Dwikorita memaparkan, pada versi pembaharuan tahun 2022 ini tampilan user interface (UI) aplikasi infoBMKG jauh lebih segar dan menarik, namun tetap mengedepankan user friendly sehingga memudahkan pengguna dalam mengakses data dan informasi yang dikeluarkan oleh BMKG.<br><br>
+
+Selain itu, ada penambahan teknologi yang bermanfaat bagi pengguna aplikasi InfoBMKG, yaitu crowdsourcing. Melalui fitur tersebut, kata Dwikorita, pengguna bisa memberikan informasi mengenai perubahan cuaca dan gempabumi di sekitar tempatnya. Fitur ini sebagai sarana verifikasi informasi yang dikeluarkan BMKG dan membantu BMKG dalam meningkatkan akurasi data dan informasi yang dikeluarkan BMKG.<br><br>
+
+Adapun beberapa fitur yang ditambahkan dalam pembaruan aplikasi ini yakni pertama, fitur Impact Based Forecasting (IBF) atau Informasi Cuaca Berbasis Dampak. Kedua, terdapat fitur citra satelit dan radar yang dikumpulkan dari 42 radar di seluruh Indonesia. Ketiga, fitur voice command yang merupakan fitur untuk membantu para penyandang disabilitas dalam mengakses data dan informasi.<br><br>
+
+"Dengan menekan tombol, nanti akan keluar suara yang membacakan prakiraan cuaca dan menjawab pertanyaan dari yang bersangkutan," imbuhnya.<br><br>
+
+Dalam pembaharuan aplikasi ini, tambah Dwikorita, juga telah mengantisipasi sulitnya mengakses aplikasi akibat keterbatasan jaringan internet. BMKG telah menjalin kolaborasi dengan program BTS Bakti Kominfo untuk penyediaan informasi di wilayah terluar, tertinggal, dan terdepan (3T).<br><br>
+
+Sementara itu, Menteri Koordinator Bidang Kemaritiman dan Investasi, Luhut Binsar Pandjaitan menyambut baik adanya pembaharuan aplikasi InfoBMKG guna menunjang kesuksesan pelaksanaan KTT G20. Menurutnya, inovasi tersebut telah sejalan dengan arahan Presiden Joko Widodo untuk mengerahkan seluruh potensi yang dimiliki dalam rangka menghadirkan keamanan dan kenyamanan selama penyelenggaraan KTT G20 di Bali.<br><br>
+
+Pengembagan sistem peringatan dini multi bencana yang dilakukan BMKG juga sejalan dengan salah satu rekomendasi yang dihasilkan dalam Global Platform for Disaster Risk Reduction 2022 di Bali yaitu pengembangan sistem peringatan dini untuk memastikan setiap orang terlindungi dalam jangka waktu 5 tahun kedepan dari risiko multi bencana.<br><br>
+
+"Selamat dan Terimakasih kepada BMKG yang telah mengambil bagian dalam menyukseskan penyelenggaraan KTT G20 di Bali. Saya melihat BMKG sekarang berubah menjadi satu organisasi yang makin profesional, yang beradaptasi dengan cepat, dan mampu menyongsong tantangan-tantangan yang ada didepan," ujarnya.<br><br>
+
+Dalam kesempatan yang sama, Kepala Pusat Jaringan Komunikasi BMKG Gregorius Budi Dharmawan menuturkan bahwa aplikasi Multi Hazard Early Warning System (MHEWS) atau sistem Peringatan Dini Multi Bahaya Geo-Hidrometeorologi telah diintegrasikan ke dalam aplikasi Info BMKG guna meminimalisir risiko akibat suatu bencana yang dapat memicu terjadinya beberapa bencana ikutan, ataupun meminimalkan risiko akibat kejadian beberapa bencana dalam satu waktu bersamaan yang dapat mengakibatkan dampak yang saling berpengaruh sehingga lebih dahsyat efeknya.<br><br>
+
+Senada, Kepala Pusat Meteorologi Publik, Fachri Radjab menyampaikan bahwa aplikasi InfoBMKG ini memiliki jangkauan hingga ke seluruh kecamatan di Indonesia dengan jangkauan prakiraan 7 hari mendatang, serta time stamp-nya 3 jam. Informasi yang diberikan, kata dia, dikemas dengan sederhana sehingga memudahkan masyarakat untuk memahami dan membacanya.<br><br>
+
+Kedepan, lanjut Fachri, BMKG akan mengembangkan resolusi waktu yang jauh lebih rapat hingga 1 jam. BMKG pun tengah membangun sistem yang dapat menghasilkan resolusi cuaca hingga ke level kelurahan. Ditargekan, pada kuartal ke-3 tahun 2023 inovasi tersebut bisa segera dirilis kepada publik.<br><br>
+
+Fachri mengatakan BMKG juga terus meningkatkan kemampuan pelayanan. Selain Prakiraan Cuaca Berbasis Dampak, BMKG juga melakukan pendekatan berbasis User Specific Services (Layanan Berbasis Kebutuhan Pengguna). Misalnya, untuk sektor energi atau pariwisata. (*)<br><br>
+
+Bagian Hubungan Masyarakat<br>
+Biro Hukum dan Organisasi<br><br>
+
+Instagram: @infoBMKG<br>
+Twitter: @infoBMKG @InfoHumasBMKG<br>
+Facebook: InfoBMKG<br>
+Youtube: infoBMKG<br>
+</p>
+<br><br><br>
+
+
+<!--SIDEBAR SCRIPT-->
+<script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "350px";
+              document.getElementById("main").style.marginLeft = "0px";
+            }
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+</script>
+
+
+<!--FOOTER-->
+<center><div class="footer">
+        <ul>
+        	<li>Copyright © 2022. <a href="https://www.bmkg.go.id/" target="blank" class="link">Badan Meteorologi, Klimatologi, dan Geofisika</a> All Right Reserved</li>
+            <li>Designed by Rahmaneza S</li>
+        </ul>
+    </div></center>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="CSS_Konten.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=0rbitron">
+	<link rel="icon" href="image/BMKG/logo_bmkg.png">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+		function startTime(){
+			var today =new Date();
+			var h =today.getHours();
+			var m =today.getMinutes();
+			var s =today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+			var t =setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if(i<10) {i = "0" + i};
+			return i;
+		}
+	</script>
+	<style>
+		#clock {
+			position: absolute;
+			bottom: 90%;
+			left: 82.8%;
+			transform: translate(-50%,-50%);
+			color: black;
+			font-family: rockwell;
+			letter-spacing: 7px;
+			font-weight: bold;
+			align-items: right;
+		}
+
+		body {
+			background-color: lightsteelblue;
+	  	}
+
+		h1 {
+		  font-family: rockwell;
+		  font-size: 200%;
+		  color: white;
+		  text-align: center;
+		  margin-right: 55px;
+		  margin-left: 55px;
+		  background-color: steelblue;
+		}
+
+		h2 {
+		  font-family: adlinnaka;
+		  color: black;
+		  font-size: 130%;
+		  margin-right: 60px;
+		  margin-left: 60px;
+		  text-decoration: bold;
+		}
+
+		p {
+		  font-family: gill sans mt;
+		  color: black;
+		  font-size: 125%;
+		  margin-left: 65px;
+		  margin-right: 65px;
+		}
+	</style>
+</head>
+<body onload="startTime()">
+<!--CLOCK-->
+	<div id="clock"></div>
+
+
+<!--NAVBAR-->
+	<div class="banner">
+		<div class="navbar">
+		<label class="logo"><img src="image/BMKG/bmkg.png" align="left" width="100px"></label>
+			<ul style="font-family: gill sans mt;">
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li class="dropdown">
+                    <a href="javascript:void(0)">About ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="sejarah.html" target="_blank">Sejarah</a>
+                        <a href="Visi.html" target="_blank">Visi dan Misi</a>
+                    </div>             
+				</li>
+				<li><a href="Gallery.html">Gallery</li>
+				<li><a href="Contact.html">Contact</li>
+				<li><a href="index4.html">Registration</li>
+				<li><a href="index2.html" class="cta">Log In</a></li>
+			</ul>
+
+
+<!--SIDEBAR-->
+			<div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button> 
+            </div>
+        </nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="judul3">Side Menu</div><br><br>
+            	<li class="dropdown">
+                    <a href="javascript:void(0)">Profil BMKG ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Profil.html">Video Profil BMKG</a>
+                        <a href="Logo.html">Logo BMKG</a>
+                        <a href="Tugas.html">Tugas, Fungsi, dan Kewenangan</a>
+            </div>
+            <li class="dropdown">
+                    <a href="javascript:void(0)">Publikasi ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Pers.html">Siaran Pers</a>
+                        <a href="Majalah.html">Majalah</a>
+                        <a href="AVI.html"><a href="http://media.bmkg.go.id/VOD.bmkg">Audio dan Video</a></a>
+                        <a href="Jurnal.html"><a href="http://puslitbang.bmkg.go.id/jmg/index.php/jmg">Jurnal</a></a>
+                        <a href="ELearning.html"><a href="https://pusdiklat.bmkg.go.id/">E-Learning</a></a>
+                        <a href="Artikel.html">Artikel</a></a>
+           		 	</div>
+            <li><a href="Organisasi.html">Struktur Organisasi</a></li>
+            <li><a href="Katalog.html"><a href="https://sibatik.bmkg.go.id/layanan.html">Katalog Layanan Jaringan Komunikasi</a></a></li>
+				</li>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+			<div class="tombol-sosmed">
+				<a href="https://web.facebook.com/InfoBMKG/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/infoBMKG/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/infoBMKG" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+        </div>
+		</div>
+<hr>
+<br>
+<br>
+
+
+<!--CONTENT-->
+	<div class="konten" style="padding: 15px; float: right; border: 1px solid gainsboro; width: 500px; height: 1975px; background: gainsboro; margin-left: 25px; margin-right: 25px; position: !important;">
+	<center><h1>Video</h1></center><br><br>
+	<center><iframe width="400px" height="250px" src="https://www.youtube.com/embed/0Zt8Xxf5AM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
+	<center><p>Prakiraan Cuaca Esok Hari Rabu, 16 November 2022</p></center><br><br>
+	<hr><br><br>
+	<center><iframe width="400px" height="250px" src="https://www.youtube.com/embed/dGa1z1JYo-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
+	<center><p>WEATHERCAST Ep. 10 - Cuaca Bisa Dimodifikasi? BMKG untuk G20 di Bali</p></center><br><br>
+	<hr><br><br>
+	<center><iframe width="400px" height="250px" src="https://www.youtube.com/embed/4gPi6FCtulY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+	<center><p>Weekly Weather Outlook Ep. 103 - Pemantauan Hujan Global dengan Satelit</p></center><br><br>
+	<hr><br><br>
+	<center><iframe width="400px" height="250px" src="https://www.youtube.com/embed/oB6kFXI4tiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
+	<center><p>Sekolah Lapang Hilal, Jurus BMKG Ajari Masyarakat “Mengintip” Hilal</p></center><br><br>
+	<hr><br><br>
+	<center><iframe width="400px" height="250px" src="https://www.youtube.com/embed/KjpgViyaOkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
+	<center><p>BerAKSI (Bersama BMKG Kasih Solusi) - <i>Flash News</i></p></center><br><br>
+	<br><br><br>
+	</div>
+
+	<br>
+	<h1>Berita</h1><br><br><br>
+	<h2>Pusat Pendidikan dan Pelatihan BMKG Menyelenggarakan Pelatihan Teknis Keamanan Jaringan Tahun 2022</h2><br>
+	<p>Jakarta - Pusat Pendidikan dan Pelatihan BMKG menyelenggarakan Pelatihan Teknis Keamanan Jaringan secara virtual di lingkungan BMKG, pada Senin (14/11).<br><br>
+	Kegiatan ini bertujuan untuk mengantisipasi data dan informasi BMKG dari berbagai macam kebocoran informasi digital, yaitu peretasan seperti yang dilakukan hacker BJORKA belakangan ini. Dengan adanya diskusi virtual tersebut, diharapkan dapat meningkatkan keamanan yang kuat sehingga tidak terjadinya lagi kebocoran informasi digital.</p><br>
+	<button onclick="document.location='https://www.bmkg.go.id/berita/?p=pusat-pendidikan-dan-pelatihan-bmkg-menyelenggarakan-pelatihan-teknis-keamanan-jaringan-tahun-2022&lang=ID'">Read more</button><br><br><br>
+	<hr><br><br>
+
+	<h2>Kunjungan Tim ITERA ke Kantor Pusat BMKG</h2><br>
+	<p>Jakarta - Rabu (2/11), BMKG menerima kunjungan dari Perwakilan ITERA (Institut Teknologi Sumatera) dengan agenda silahturahmi sekaligus menindaklanjuti perpanjangan Perjanjian Kerja Sama (PKS) antara ITERA dengan BMKG. Pertemuan diadakan di Kantor Pusat BMKG yang difasilitasi Subkoordinator Kerja Sama Dalam Negeri dan dihadiri oleh Jajaran Pejabat BMKG Pusat dari berbagai unit terkait, sedangkan dari ITERA diwakili oleh Kepala UPT MKG ITERA Drs. Zadrach Ledoufij Dupe, Kepala Program Studi Sains Atmosfer dan Keplanetan Dr. Deni Okta Lestari, dan Pranata Laboratorium Pendidikan UPT MKG Dirya Andriyan, S.T.</p><br>
+	<button onclick="document.location='https://www.bmkg.go.id/berita/?p=kunjungan-tim-itera-ke-kantor-pusat-bmkg&lang=ID'">Read more</button><br><br><br>
+	<hr><br><br>
+
+	<h2>Sekolah Lapang Cuaca Nelayan (SLCN) Sampang Madura</h2><br>
+	<p>Indonesia sebagai negara kepulauan merupakan salah satu negara dengan garis pantai terpanjang di dunia, mempunyai potensi sumber daya alam sangat besar di sektor perikanan yang merupakan salah satu tulang punggung ketahanan pangan di Indonesia. BMKG Tanjung Perak hadir melalui kegiatan Sekolah Lapang Cuaca Nelayan (SLCN) untuk mengedukasi Nelayan dan Stakeholder yang terlibat dalam kegiatan kelautan agar dapat memahami produk informasi cuaca sebagai bekal beraktifitas di laut.</p><br>
+	<button onclick="document.location='https://www.bmkg.go.id/berita/?p=sekolah-lapang-cuaca-nelayan-slcn-sampang-madura&lang=ID'">Read more</button><br><br><br>
+	<hr><br><br>
+
+	<h2>Panen Raya SLI Mempawah Kalimantan Barat: Produktivitas Meningkat di Tengah Kondisi Curah Hujan Tinggi</h2><br>
+	<p>Stasiun Klimatologi Kalimantan Barat melakukan kegiatan panen raya serta penutupan kegiatan Sekolah Lapang Iklim Operasional Provinsi Kalimantan Barat tahun 2022 yang dilaksanakan di Desa Sungai Nipah, Kec. Jongkat, Kabupaten Mempawah. Panen raya ini menjadi penutup rangkaian kegiatan SLI yang dimulai dengan tanam perdana pada tanggal 25 Mei 2022, sosialisasi kedua pada tanggal 28 Juni 2022, serta sosialisasi ketiga pada tanggal 4 Oktober 2022, dengan total 75 peserta yang terdiri dari beberapa kelompok tani di Kec. Jongkat dan Segedong yang tergabung dalam Gapoktan Sejahtera Abadi. Pelaksanaan SLI oleh Stasiun Klimatologi Kalimantan Barat ini merupakan salah satu bentuk dukungan dalam upaya peningkatan produktivitas pertanian di Kabupaten Mempawah melalui edukasi kepada petani mengenai informasi serta adaptasi terhadap cuaca dan iklim esktrem dalam pertanian.</p><br>
+	<button onclick="document.location='https://www.bmkg.go.id/berita/?p=panen-raya-sli-mempawah-kalimantan-barat-produktivitas-meningkat-di-tengah-kondisi-curah-hujan-tinggi&lang=ID'">Read more</button><br><br><br>
+	<hr><br><br>
+
+	<h2>SMA N I dan SMA N 4 Kota Blitar Kunjungi Stasiun Geofisika Malang</h2><br>
+	<p>Malang, Kamis (22/09/2022), Stasiun Geofisika Malang menerima kunjungan edukasi dari Siswa SMA N 1 Kota Blitar dan SMA N 4 Kota Blitar sebanyak 40 siswa yang merupakan peserta OSN beserta 5 Guru Pendamping. Rombongan diterima langsung oleh Kepala Stasiun Geofisika Malang.<br><br>
+	Dalam sambutannya, Kepala Stasiun Geofisika Malang, Bapak Ma'muri S. Si., M.T.I. mengucapkan terima kasih kepada pihak sekolah yang telah memfasilitasi siswa/wi pada kunjungan edukasi ini dan semoga bermanfaat khususnya siswa/wi dapat mempelajari tentang pengenalan Meteorologi, Klimatologi serta Geofisika dan peralatannya.</p><br>
+	<button onclick="document.location='https://www.bmkg.go.id/berita/?p=sma-n-i-dan-sma-n-4-kota-blitar-kujungi-stasiun-geofisika-malang&lang=ID'">Read more</button><br><br><br>
+	<hr><br><br>
+
+	<h2><i>Pra-Entry Meeting</i> Pemeriksaan Interim atas Laporan Keuangan BMKG TA 2022</h2><br>
+	<p>Jumat, 4-Nov-2022 - Berdasarkan Undang-Undang Nomor 17 Tahun 2003 tentang Keuangan Negara, Tim Badan Pemeriksa Keuangan (BPK RI) hari ini melakukan Pra Entry Meeting Pemeriksaan Interim atas laporan Keuangan Badan Meteorologi, Klimatologi, dan Geofisika TA 2022. Tim Pemeriksa Badan Pemeriksa Keuangan diterima oleh sejumlah Pejabat Tinggi Madya dan Pejabat Tinggi Pratama dan PPK di lingkungan BMKG di Ruang Rapat lantai 1 BMKG Pusat Jakarta.</p><br>
+	<button onclick="document.location='https://www.bmkg.go.id/berita/?p=pra-entry-meeting-pemeriksaan-interim-atas-laporan-keuangan-bmkg-ta-2022&lang=ID'">Read more</button><br><br><br>
+	<hr><br><br>
+
+	<h2>Dukung KTT G20, BMKG Luncurkan Pembaruan Aplikasi Info BMKG</h2><br>
+	<p>Jakarta - Senin (07/11/2022), BMKG resmi luncurkan inovasi baru pada aplikasi Info BMKG untuk mendukung kesuksesan kegiatan KTT G-20 yang akan diselenggarakan di Bali pada tanggal 15-16 November 2022. Peresmian ini diselenggarakan secara virtual dan dihadiri juga oleh Menteri Koordinator Bidang Maritim dan Investasi, Luhut B. Pandjaitan, sebagai bentuk dukungan dan apresiasi kepada BMKG.</p><br>
+	<button onclick="document.location='https://www.bmkg.go.id/berita/?p=dukung-ktt-g-20-bmkg-luncurkan-pembaruan-aplikasi-info-bmkg&lang=ID'">Read more</button>
+	<br><br><br>
+
+
+<!--SIDEBAR SCRIPT-->
+<script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "350px";
+              document.getElementById("main").style.marginLeft = "0px";
+            }
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+</script>
+
+
+<!--FOOTER-->
+<center><div class="footer">
+        <ul>
+        	<li>Copyright © 2022. <a href="https://www.bmkg.go.id/" target="blank" class="link">Badan Meteorologi, Klimatologi, dan Geofisika</a> All Right Reserved</li>
+            <li>Designed by Rahmaneza S</li>
+        </ul>
+    </div></center>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sejarah</title>
+	<link rel="stylesheet" type="text/css" href="CSS_Konten.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=0rbitron">
+	<link rel="icon" href="image/BMKG/logo_bmkg.png">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+		function startTime(){
+			var today =new Date();
+			var h =today.getHours();
+			var m =today.getMinutes();
+			var s =today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+			var t =setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if(i<10) {i = "0" + i};
+			return i;
+		}
+	</script>
+	<style>
+		#clock {
+			position: absolute;
+			bottom: 90%;
+			left: 82.8%;
+			transform: translate(-50%,-50%);
+			color: black;
+			font-family: rockwell;
+			letter-spacing: 7px;
+			font-weight: bold;
+			align-items: right;
+		}
+
+		body {
+			background-color: lightsteelblue;
+	  	}
+
+		h1 {
+		  font-family: rockwell;
+		  font-size: 250%;
+		  color: white;
+		  text-align: center;
+		  margin-right: 55px;
+		  margin-left: 55px;
+		  background-color: steelblue;
+		}
+
+		h2 {
+		  font-family: adlinnaka;
+		  color: black;
+		  font-size: 150%;
+		  margin-right: 60px;
+		  margin-left: 60px;
+		  text-decoration: bold;
+		}
+
+		p {
+		  font-family: gill sans mt;
+		  color: black;
+		  font-size: 150%;
+		  margin-left: 65px;
+		  margin-right: 65px;
+		}
+	</style>
+</head>
+<body onload="startTime()">
+<!--CLOCK-->
+	<div id="clock"></div>
+
+
+<!--NAVBAR-->
+	<div class="banner">
+		<div class="navbar">
+		<label class="logo"><img src="image/BMKG/bmkg.png" align="left" width="100px"></label>
+			<ul style="font-family: gill sans mt;">
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li class="dropdown">
+                    <a href="javascript:void(0)">About ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="sejarah.html" target="_blank">Sejarah</a>
+                        <a href="Visi.html" target="_blank">Visi dan Misi</a>
+                    </div>             
+				</li>
+				<li><a href="Gallery.html">Gallery</li>
+				<li><a href="Contact.html">Contact</li>
+				<li><a href="index4.html">Registration</li>
+				<li><a href="index2.html" class="cta">Log In</a></li>
+			</ul>
+
+
+<!--SIDEBAR-->
+			<div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button> 
+            </div>
+        </nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="judul3">Side Menu</div><br><br>
+            	<li class="dropdown">
+                    <a href="javascript:void(0)">Profil BMKG ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Profil.html">Video Profil BMKG</a>
+                        <a href="Logo.html">Logo BMKG</a>
+                        <a href="Tugas.html">Tugas, Fungsi, dan Kewenangan</a>
+            </div>
+            <li class="dropdown">
+                    <a href="javascript:void(0)">Publikasi ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Pers.html">Siaran Pers</a>
+                        <a href="Majalah.html">Majalah</a>
+                        <a href="AVI.html"><a href="http://media.bmkg.go.id/VOD.bmkg">Audio dan Video</a></a>
+                        <a href="Jurnal.html"><a href="http://puslitbang.bmkg.go.id/jmg/index.php/jmg">Jurnal</a></a>
+                        <a href="ELearning.html"><a href="https://pusdiklat.bmkg.go.id/">E-Learning</a></a>
+                        <a href="Artikel.html">Artikel</a></a>
+           		 	</div>
+            <li><a href="Organisasi.html">Struktur Organisasi</a></li>
+            <li><a href="Katalog.html"><a href="https://sibatik.bmkg.go.id/layanan.html">Katalog Layanan Jaringan Komunikasi</a></a></li>
+				</li>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+			<div class="tombol-sosmed">
+				<a href="https://web.facebook.com/InfoBMKG/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/infoBMKG/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/infoBMKG" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+        </div>
+		</div>
+<hr>
+<br>
+<br>
+
+<!--CONTENT-->
+	<h1>Sejarah</h1><br><br>
+<p>Sejarah pengamatan meteorologi dan geofisika di Indonesia dimulai pada tahun 1841 yang diawali dengan pengamatan yang dilakukan secara perorangan oleh Dr. Onnen, Kepala Rumah Sakit di Bogor. Tahun demi tahun kegiatannya berkembang sesuai dengan semakin diperlukannya data hasil pengamatan cuaca dan geofisika.<br><br>
+
+Pada tahun 1866, kegiatan pengamatan perorangan tersebut oleh Pemerintah Hindia Belanda diresmikan menjadi instansi pemerintah dengan nama <i>Magnetisch en Meteorologisch Observatorium</i> atau Observatorium Magnetik dan Meteorologi, dipimpin oleh Dr. Bergsma.<br><br>
+
+Pada tahun 1879, dibangun jaringan penakar hujan sebanyak 74 stasiun pengamatan di Jawa. Pada tahun 1902, pengamatan medan magnet bumi dipindahkan dari Jakarta ke Bogor. Pengamatan gempa bumi dimulai pada tahun 1908 dengan pemasangan komponen horisontal seismograf <i>Wiechert</i> di Jakarta, sedangkan pemasangan komponen vertikal dilaksanakan pada tahun 1928.<br><br>
+
+Pada tahun 1912, dilakukan reorganisasi pengamatan meteorologi dengan menambah jaringan sekunder. Sedangkan jasa meteorologi mulai digunakan untuk penerangan pada tahun 1930.<br><br>
+
+Pada masa pendudukan Jepang antara tahun 1942 sampai dengan 1945, nama instansi meteorologi dan geofisika diganti menjadi <i>Kisho Kauso Kusho</i>.<br><br>
+
+Setelah proklamasi kemerdekaan Indonesia pada tahun 1945, instansi tersebut dipecah menjadi dua. Di Yogyakarta dibentuk Biro Meteorologi yang berada di lingkungan Markas Tertinggi Tentara Rakyat Indonesia khusus untuk melayani kepentingan Angkatan Udara. Di Jakarta dibentuk Jawatan Meteorologi dan Geofisika, di bawah Kementerian Pekerjaan Umum dan Tenaga.<br><br>
+
+Pada tanggal 21 Juli 1947, Jawatan Meteorologi dan Geofisika diambil alih oleh Pemerintah Belanda dan namanya diganti menjadi <i>Meteorologisch en Geofisiche Dienst</i>. Sementara itu, ada juga Jawatan Meteorologi dan Geofisika yang dipertahankan oleh Pemerintah Republik Indonesia, kedudukan instansi tersebut di Jl. Gondangdia, Jakarta.<br><br>
+
+Pada tahun 1949, setelah penyerahan kedaulatan negara Republik Indonesia dari Belanda, <i>Meteorologisch en Geofisiche Dienst</i> diubah menjadi Jawatan Meteorologi dan Geofisika di bawah Departemen Perhubungan dan Pekerjaan Umum. Selanjutnya, pada tahun 1950, Indonesia secara resmi masuk sebagai anggota Organisasi Meteorologi Dunia (<i>World Meteorological Organization</i>) atau WMO dan Kepala Jawatan Meteorologi dan Geofisika menjadi <i>Permanent Representative of Indonesia with WMO</i>.<br><br>
+
+Pada tahun 1955, Jawatan Meteorologi dan Geofisika diubah namanya menjadi Lembaga Meteorologi dan Geofisika di bawah Departemen Perhubungan, dan pada tahun 1960 namanya dikembalikan menjadi Jawatan Meteorologi dan Geofisika di bawah Departemen Perhubungan Udara.<br><br>
+
+Pada tahun 1965, namanya diubah menjadi Direktorat Meteorologi dan Geofisika, kedudukannya tetap di bawah Departemen Perhubungan Udara. Pada tahun 1972, Direktorat Meteorologi dan Geofisika diganti namanya menjadi Pusat Meteorologi dan Geofisika, suatu instansi setingkat eselon II di bawah Departemen Perhubungan, dan pada tahun 1980 statusnya dinaikkan menjadi suatu instansi setingkat eselon I dengan nama Badan Meteorologi dan Geofisika, dengan kedudukan tetap berada di bawah Departemen Perhubungan. Pada tahun 2002, dengan keputusan Presiden RI Nomor 46 dan 48 tahun 2002, struktur organisasinya diubah menjadi Lembaga Pemerintah Nondepartemen (LPND) dengan nama tetap Badan Meteorologi dan Geofisika.<br><br>
+
+Terakhir, melalui Peraturan Presiden Nomor 61 Tahun 2008, Badan Meteorologi dan Geofisika berganti nama menjadi Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) dengan status tetap sebagai Lembaga Pemerintah Nondepartemen. Pada tanggal 1 Oktober 2009, Undang-Undang Republik Indonesia Nomor 31 Tahun 2009 tentang Meteorologi, Klimatologi, dan Geofisika disahkan oleh Presiden Republik Indonesia, Susilo Bambang Yudhoyono.</p>
+<br><br><br>
+
+
+<!--SIDEBAR SCRIPT-->
+<script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "350px";
+              document.getElementById("main").style.marginLeft = "0px";
+            }
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+</script>
+
+
+<!--FOOTER-->
+<center><div class="footer">
+        <ul>
+        	<li>Copyright © 2022. <a href="https://www.bmkg.go.id/" target="blank" class="link">Badan Meteorologi, Klimatologi, dan Geofisika</a> All Right Reserved</li>
+            <li>Designed by Rahmaneza S</li>
+        </ul>
+    </div></center>
+
+</body>
+</html>

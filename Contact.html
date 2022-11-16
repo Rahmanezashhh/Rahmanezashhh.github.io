@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="CSS_Konten.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=0rbitron">
+	<link rel="icon" href="image/BMKG/logo_bmkg.png">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+		function startTime(){
+			var today =new Date();
+			var h =today.getHours();
+			var m =today.getMinutes();
+			var s =today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+			var t =setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if(i<10) {i = "0" + i};
+			return i;
+		}
+	</script>
+	<style>
+		#clock {
+			position: absolute;
+			bottom: 90%;
+			left: 82.8%;
+			transform: translate(-50%,-50%);
+			color: black;
+			font-family: rockwell;
+			letter-spacing: 7px;
+			font-weight: bold;
+			align-items: right;
+		}
+
+		body {
+			background-color: lightsteelblue;
+	  	}
+
+		h1 {
+		  font-family: rockwell;
+		  font-size: 250%;
+		  color: white;
+		  text-align: center;
+		  margin-right: 55px;
+		  margin-left: 55px;
+		  background-color: steelblue;
+		}
+
+		h2 {
+		  font-family: adlinnaka;
+		  color: black;
+		  font-size: 150%;
+		  margin-right: 60px;
+		  margin-left: 60px;
+		  text-decoration: bold;
+		}
+
+		p {
+		  font-family: gill sans mt;
+		  color: black;
+		  font-size: 150%;
+		  margin-left: 65px;
+		  margin-right: 65px;
+		}
+	</style>
+</head>
+<body onload="startTime()">
+<!--CLOCK-->
+	<div id="clock"></div>
+
+
+<!--NAVBAR-->
+	<div class="banner">
+		<div class="navbar">
+		<label class="logo"><img src="image/BMKG/bmkg.png" align="left" width="100px"></label>
+			<ul style="font-family: gill sans mt;">
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li class="dropdown">
+                    <a href="javascript:void(0)">About ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="sejarah.html" target="_blank">Sejarah</a>
+                        <a href="Visi.html" target="_blank">Visi dan Misi</a>
+                    </div>             
+				</li>
+				<li><a href="Gallery.html">Gallery</li>
+				<li><a href="Contact.html">Contact</li>
+				<li><a href="index4.html">Registration</li>
+				<li><a href="index2.html" class="cta">Log In</a></li>
+			</ul>
+
+
+<!--SIDEBAR-->
+			<div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button> 
+            </div>
+        </nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="judul3">Side Menu</div><br><br>
+            	<li class="dropdown">
+                    <a href="javascript:void(0)">Profil BMKG ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Profil.html">Video Profil BMKG</a>
+                        <a href="Logo.html">Logo BMKG</a>
+                        <a href="Tugas.html">Tugas, Fungsi, dan Kewenangan</a>
+            </div>
+            <li class="dropdown">
+                    <a href="javascript:void(0)">Publikasi ˅</a>
+                    <div class="konten-dropdown">
+                        <a href="Pers.html">Siaran Pers</a>
+                        <a href="Majalah.html">Majalah</a>
+                        <a href="AVI.html"><a href="http://media.bmkg.go.id/VOD.bmkg">Audio dan Video</a></a>
+                        <a href="Jurnal.html"><a href="http://puslitbang.bmkg.go.id/jmg/index.php/jmg">Jurnal</a></a>
+                        <a href="ELearning.html"><a href="https://pusdiklat.bmkg.go.id/">E-Learning</a></a>
+                        <a href="Artikel.html">Artikel</a></a>
+           		 	</div>
+            <li><a href="Organisasi.html">Struktur Organisasi</a></li>
+            <li><a href="Katalog.html"><a href="https://sibatik.bmkg.go.id/layanan.html">Katalog Layanan Jaringan Komunikasi</a></a></li>
+				</li>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+			<div class="tombol-sosmed">
+				<a href="https://web.facebook.com/InfoBMKG/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/infoBMKG/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/infoBMKG" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+        </div>
+		</div>
+<hr>
+<br>
+<br>
+
+
+<!--CONTENT-->
+	<h1>Kantor Pusat</h1><br><br>
+	<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253842.54463224296!2d106.70222702330909!3d-6.225473727419325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5eac092e3eb%3A0xbaab03d1e07d43be!2sBadan%20Meteorologi%20Klimatologi%20dan%20Geofisika%20Indonesia!5e0!3m2!1sid!2sid!4v1668543623291!5m2!1sid!2sid" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+		<p>Jl. Angkasa I No.2 Kemayoran<br>
+		Jakarta Pusat, DKI Jakarta 10610<br>
+		PO Box 3540 Jkt.</p></center>
+
+<br>
+<hr>
+<br>
+
+	<h2>Tel. & Fax</h2><br>
+	<p>Call Center (021) 196</p><br>
+	<p>Fax (021) 4246703</p>
+
+<br>
+<hr>
+<br>
+
+	<h2>E-mail</h2><br>
+	<p><a href="mailto:info@bmkg.go.id">info@bmkg.go.id</a></p>
+<br><br><br>
+
+
+<!--SIDEBAR SCRIPT-->
+<script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "350px";
+              document.getElementById("main").style.marginLeft = "0px";
+            }
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+</script>
+
+
+<!--FOOTER-->
+<center><div class="footer">
+        <ul>
+        	<li>Copyright © 2022. <a href="https://www.bmkg.go.id/" target="blank" class="link">Badan Meteorologi, Klimatologi, dan Geofisika</a> All Right Reserved</li>
+            <li>Designed by Rahmaneza S</li>
+        </ul>
+    </div></center>
+
+</body>
+</html>
